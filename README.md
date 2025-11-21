@@ -26,8 +26,8 @@ The service listens on `PORT` (default `4100`).
 | --- | --- |
 | `DATABASE_URL` | Postgres connection string |
 | `JWT_SECRET` or `JWT_PUBLIC_KEY` | Secret (HS256) or PEM public key (RS256/ES256) used to verify auth tokens |
-| `POINTS_API_BASE_URL` | Base URL of the main MinAI app where point deductions take place |
-| `POINTS_SERVICE_API_KEY` | Service-to-service token presented when debiting points |
+| `POINTS_API_BASE_URL` | Base URL (including locale + `/api`, e.g. `https://app/en/api`) for point deductions |
+| `POINTS_SERVICE_API_KEY` | Service-to-service token (must match MinAI `LEARNING_SERVICE_API_KEY`) |
 
 ## Database & Migrations
 
